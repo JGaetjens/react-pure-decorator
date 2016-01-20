@@ -1,22 +1,23 @@
 language: node_js
 node_js:
-  - node
+- node
 sudo: false
 script:
-  - npm run test
-  - npm run coverage
-  - npm run build
+- npm run test
+- npm run coverage
+- npm run build
 after_success:
-  - npm install -g codeclimate-test-reporter
-  - codeclimate-test-reporter < coverage/lcov.info
+- npm install -g codeclimate-test-reporter
+- codeclimate-test-reporter < coverage/lcov.info
 addons:
   code_climate:
-    repo_token: 6c2f65bed4a8ff50c04a9ac4c6cc3744d0ec2ddad9ef7c19e2aa4f74457562ee
+    repo_token: 0fa8f40e2a194d3ea2c84f2886582642c1569be0328ebfed3ca814e78731ee65
 deploy:
   provider: npm
-  email: stephen.austin@rovisys.com
   skip_cleanup: true
+  email: stephen.austin@rovisys.com
   api_key:
-    secure: Q4/2UHycR266AMWLopIq31Um/6RS2V5QX2cA30qrgUnKqmxVBsdsrA82zOTaCTJ85zxtGsTllGzJsyG2FbLozZRDXf3eSuB2DDaOXHEynBG1x3ozvtS3FuDd+32R2utjqrGWapfszm/N+xdKDB8b8fORpfYZj1l/cxrgYMk7JjwiM8IZcbzORKqMwsG5KHJjH/NqM/PGDG5TAWOATkNKtYGdagf/gdIOKCaj9XORD+LZ79QEgsYDE/V5SSACy2fW2lIrtC+9wx4uF5aCcz6MDQQJVbY9jKjjcqLDOmbq04TcnP6tYVMeiYNcjSjj4WTEJpwgzw3mnBDPAFRdB7XdochGFncqBjcp5Va0e9EaEEcRP3ADQwMrCaMFPmoJd/7Ote3FxSnPw8O6Nc+JGWspc5l7LwrBRd89PR2vk9e0AmJfp6wzMJLLdBXMsnE4L+3lOtvyK3OBqgnobD34nojuz7uLi7NE16/b7hlOthUI7VfU1f/Ie3beQasmi90nxDM+A6gjBu0enJnMV2nRKcU6wpvoQ5j8M/5i6mkwkdaDza7uU4StTYSq5sRPAL+4f26OAc8oN7OeQQQv/EdkBVZxWM+byAV4YrAyhCyXd7LZsQKGM5NO9XU8Npo7iSHn+mikGKMEeIG2KpIQRUJsl0+DxiAi5wlRYekLCXFkSuRZAmc=
+    secure: zKY6VzElMFjtUZ3uTnqS+npPbDRj4knhToAXKGqIEp0084UbMELoxgFbSu5sXX+5JIsj+Bir+D1aHnoE7w48B/LsVFN4eO22yYW10FsqfxyNKvgjq11+w40JQkjEAiXnxDUsSZoiusAxXCzsn3WGcoZYK1MbYFX1qEfS8Bc1BkhrN/2cnw7ysgVGepvxGP06rXnB+js3vqYNqWAAPyJubU1ZKz7kP1fP6HnwFYPdZBr1KYzkMhWLE+UjRAl2cFaRGQ4uxvXRpnUJbdcERqDUJNZxvwEPnNuoF1vD0CpCdIoyGsMIuKBt5rsOixKNyPC/GEl/JadHdt4GRwq9MRKVU542qzRzXy0KJLhc4pon2jr8O6019wSuLS8Ekvdw9A5VAYHAjapR9gSij4ASYMHOYz7h5d6GnW7AzdaHtzJgQ1oz9eQycmOVfN6LUyJ1ssWdr9CFKLGLbFDJEdUv713GEiHrTZd4r0w3zuwJ+KnOiPrSW1btCadtIKgkbICgZ03T4GV4OT2WgUY4FM/d+gy/NfjoopNwv9uM/eqiV3UPErE9jUFuZWDvF/dEvttHewAy8i8510s5zgZKL+JhaRBe8HSkmOYujabuE/AR6tVf8pTvhcsagPJ+p6SnZiRUR+Q8YUaYYN/TWvElrWwubk2OYO9YC053aydd0QjByEzqebw=
   on:
     tags: true
+    repo: RoviSys/react-pure-decorator
