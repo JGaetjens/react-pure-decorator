@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/RoviSys/react-pure-decorator",
   "devDependencies": {
+    "Pure": "react-pure-decorator",
     "babel-core": "^6.3.26",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.0",
@@ -51,14 +52,13 @@
     "gulp-util": "^3.0.7",
     "isparta": "^4.0.0",
     "json-loader": "^0.5.3",
+    "lodash.isequal": "^4.0.0",
     "mocha": "^2.3.4",
     "release-it": "^2.3.1",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "vinyl-source-stream": "^1.1.0",
-    "webpack": "^1.12.9",
-    "lodash.isequal": "^4.0.0",
-    "Pure": "react-pure-decorator"
+    "webpack": "^1.12.9"
   },
   "babelBoilerplateOptions": {
     "entryFileName": "react-pure-decorator",
