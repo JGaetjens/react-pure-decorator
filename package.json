@@ -57,7 +57,8 @@
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "vinyl-source-stream": "^1.1.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-stream": "^3.1.0"
   },
   "babelBoilerplateOptions": {
     "entryFileName": "react-pure-decorator",
