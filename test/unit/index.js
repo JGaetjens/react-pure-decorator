@@ -15,14 +15,14 @@ const currProps = {
 
 @Pure()
 class MyComponent {
-  constructor(){
-    this.state = currState;
-    this.props = currProps;
+  constructor(state, props){
+    this.state = state;
+    this.props = props;
   }
 }
 
 describe('Pure', () => {
-  var mc = new MyComponent();
+  var mc = new MyComponent(currState, currProps);
 
   it('should attach shouldComponentUpdate to the class', () => {
       expect(MyComponent.prototype.shouldComponentUpdate).to.exist;
@@ -36,5 +36,8 @@ describe('Pure', () => {
     expect(mc.shouldComponentUpdate(currProps, nextState)).to.be.equal(true);
   });
 
+  it('should update if state is undefined and currProps is different than nextProps', () => {
+
+  });
 
 });
