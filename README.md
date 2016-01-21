@@ -19,7 +19,7 @@
 # Example
  
 
- > Using the style decorator, you can attach a stylesheet to a component like this:
+ > Using the Pure decorator, you can attach a stylesheet to a component like this:
 
     import {Pure} from 'decorators';
  
