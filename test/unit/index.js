@@ -37,7 +37,14 @@ describe('Pure', () => {
   });
 
   it('should update if state is undefined and currProps is different than nextProps', () => {
-
+    mc = new MyComponent();
+    mc.props = currProps;
+    expect(mc.shouldComponentUpdate(nextProps, nextState)).to.be.equal(true);
   });
 
+  it('should update if props is undefined but currState is different than nextState', () => {
+    mc = new MyComponent();
+    mc.state = currState;
+    expect(mc.shouldComponentUpdate(nextProps, nextState)).to.be.equal(true);
+  });
 });
