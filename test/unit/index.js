@@ -1,14 +1,12 @@
-import Pure from '.../react-pure-decorator';
+import Pure from '.../.../.../react-pure-decorator';
+import isEqual from 'lodash.isEqual';
+
 
 describe('Pure', () => {
-  describe('Greet function', () => {
-    beforeEach(() => {
-      spy(Pure, 'greet');
-      Pure.greet();
-    });
+  describe('shouldComponentUpdate', () => {
 
-    it('should have been run once', () => {
-      expect(Pure.greet).to.have.been.calledOnce;
+    it('should change the state', () => {
+      expect(!this.state || isEqual(this.state, nextState));
     });
 
     it('should have always returned hello', () => {
