@@ -1,5 +1,5 @@
 import isEqual from 'lodash.isequal';
-import Pure from '../src/';
+import Pure from '../../src/';
 
 @Pure()
 class MyComponent {}

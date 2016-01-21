@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/RoviSys/react-pure-decorator",
   "devDependencies": {
-    "Pure": "react-pure-decorator",
     "babel-core": "^6.3.26",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.0",
@@ -65,7 +64,6 @@
     "mainVarName": "Pure"
   },
   "dependencies": {
-    "lodash.isEqual": "^4.0.0",
-    "Pure": "react-pure-decorator"
+    "lodash.isEqual": "^4.0.0"
   }
 }
