@@ -14,10 +14,11 @@
  
 # Example
  
+
  > Using the style decorator, you can attach a stylesheet to a component like this:
- > `<
- import {Pure} from 'decorators';
+
+    import {Pure} from 'decorators';
  
- @Pure()
+    @Pure()
      export class ControlPanelLine extends Component {
-       static displayName = 'ControlPanelLine';>`
+     static displayName = 'ControlPanelLine';
