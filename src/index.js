@@ -1,4 +1,4 @@
-import isEqual from 'lodash.isEqual';
+import isEqual from 'lodash.isequal';
 
 export default function Pure() {
   return function decorator(Component) {

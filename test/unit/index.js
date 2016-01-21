@@ -1,16 +1,10 @@
-import Pure from '.../.../.../react-pure-decorator';
-import isEqual from 'lodash.isEqual';
+import isEqual from 'lodash.isequal';
+import Pure from '../src/';
 
-
+@Pure()
+class MyComponent {}
 describe('Pure', () => {
-  describe('shouldComponentUpdate', () => {
-
-    it('should change the state', () => {
-      expect(!this.state || isEqual(this.state, nextState));
+    it('should attach shouldComponentUpdate to the class', () => {
+      expect(MyComponent.prototype.shouldComponentUpdate).to.exist;
     });
-
-    it('should have always returned hello', () => {
-      expect(Pure.greet).to.have.always.returned('hello');
-    });
-  });
 });
