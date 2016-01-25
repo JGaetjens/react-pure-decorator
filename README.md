@@ -6,7 +6,7 @@
 
 # react-pure-decorator
 
- > Marks the react component as pure for optimized rendering
+  Marks the react component as pure for optimized rendering
  
 # Installation
 
