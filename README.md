@@ -10,7 +10,7 @@
  
 # Installation
 
-  Run `<npm install --save react-pure-decorator>` and then use the default export of the module
+  Run `npm install --save react-pure-decorator` and then use the default export of the module
  
 # Purpose
 
