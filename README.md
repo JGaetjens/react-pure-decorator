@@ -10,19 +10,19 @@
  
 # Installation
 
- > Run `<npm install --save react-pure-decorator>` and then use the default export of the module
+  Run `<npm install --save react-pure-decorator>` and then use the default export of the module
  
 # Purpose
 
- > Pure prevents unneccesary rendering of a page
+  Pure prevents unneccesary rendering of a page
  
 # Example
  
 
- > Using the Pure decorator, you can attach a stylesheet to a component like this:
+  Using the Pure decorator, you can attach a stylesheet to a component like this:
 
     import {Pure} from 'decorators';
  
     @Pure()
-     export class ControlPanelLine extends Component {
-     static displayName = 'ControlPanelLine';
+     export class MyClass extends Component {
+     static displayName = 'MyClass';
