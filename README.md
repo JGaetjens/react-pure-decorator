@@ -21,13 +21,13 @@
 
   Using the Pure decorator, you can attach a stylesheet to a component like this:
 
-import Pure from 'react-Pure-decorator';
+    import Pure from 'react-Pure-decorator';
 
     @Pure(require('css/my-component.css'))
     class MyComponent extends Component {
      render() {
-     return (
-      <h1>Example<h1>
-      );
+       return (
+        <h1>Example<h1>
+       );
+      }
      }
-    }
